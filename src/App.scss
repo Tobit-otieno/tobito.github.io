@@ -1,0 +1,137 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('') center top;
+    background-size: cover;
+    border-radius: 1%;
+    background-image: url('../public/img/background.jpeg')  center top;
+    background-size: cover;
+    
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 7px;
+        a:hover{
+            color: rgb(190, 74, 74);
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .left{
+            display: flex;
+            align-items: flex-start;
+            img{
+                width: 1.8em;
+                display: inline;
+            }
+            .list{
+                display: inline;
+            }
+        }
+        li{
+            display: inline;
+            margin: 0.5em;
+            font-size: 0.9rem;
+        }
+        .right{
+            display: flex;
+            align-items: flex-start;
+            img{
+                width: 5%;
+                padding-left: 15%;
+                padding-right: 4px;
+            }
+        }
+    }
+
+    body{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15%;
+
+        .movie{
+            width: 25%;
+            h1{
+                font-weight: bolder;
+            }
+            .rating{
+                img{
+                    width: 5%;
+                }
+                p{
+                    display: inline;
+                }
+            }
+            
+            button{
+                margin-top: 30%;
+                width: 40%;
+                height: 14%;
+                margin-left: 10px;
+                border-radius: 10%;
+                border-style: none;
+                color: white;
+            }
+            .btn-play{
+                background-color: rgb(5, 5, 167);
+            }
+            .btn-play:hover{
+                opacity: 0.8;
+            }
+            .btn-play:active{
+                opacity: 0.5;
+            }
+
+            .btn{
+                background-color: black;
+                opacity: 0.8;
+            }
+            .btn:hover{
+                opacity: 0.7;
+            }
+            .btn:active{
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .about-movie{
+        width: 50%;
+        .posters{
+            img{
+                width: 22%;
+                margin-right: 3%;
+            }
+        }
+
+        .actors{
+            display: flex;
+            justify-content: space-between;
+
+            h2{
+                display: inline-block;
+            }
+            .actor{
+                img{
+                    border-radius: 100%;
+                }
+            }
+
+            button{
+                height: 95px;
+                border-radius: 50%;
+                border-style: none;
+                background-color: rgb(0, 0, 0);
+                opacity: 0.8;
+                color: white;
+            }
+            button:active{
+                opacity: 0.5;
+            }
+        }
+    }
+}
